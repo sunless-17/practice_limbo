@@ -11,10 +11,12 @@
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
-fn calculate_price_of_apples(i: u8) -> u8 {
-    // use if let or match
-    if let i =  {
-        
+
+fn calculate_price_of_apples(apples: u8) -> u8 {
+    // conditional statement to determine the price of the apples
+    match apples {
+        num_of_apples if apples > 40 => num_of_apples,
+        _ => apples * 2,
     }
 }
 
